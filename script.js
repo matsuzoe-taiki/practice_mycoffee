@@ -1,4 +1,5 @@
-const h1Element = document.querySelector('h1');
+const changeButton = document.getElementById('changeButton');
 
-h1Element.textContent = "DOM操作は楽しい"
-h1Element.classList.add("change")
+changeButton.addEventListener('click', (e) => {
+    console.log("クリックボタンのID：", e.target.id)
+})
