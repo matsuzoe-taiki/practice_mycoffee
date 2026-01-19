@@ -1,5 +1,13 @@
-const changeButton = document.getElementById('changeButton');
+const todoInput = document.getElementById("todoInput");
+const addButton = document.getElementById("addButton");
+const itemList = document.getElementById("itemList");
 
-changeButton.addEventListener('click', (e) => {
-    console.log("クリックボタンのID：", e.target.id)
+addButton.addEventListener("click", () => {
+    const todoValue = todoInput.value;
+    if (todoValue.length !== 0) {
+        const newLi = document.createElement("li");
+        newLi.textContent = todoValue;
+        itemList.appendChild(newLi);
+        todoInput.value = "";
+    }
 })

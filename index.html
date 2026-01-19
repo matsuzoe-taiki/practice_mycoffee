@@ -2,14 +2,16 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>イベント処理の練習</title>
+        <title>ToDOリスト機能</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>イベント処理を学ぼう</h1>
-        <p id="message">ボタンを押すと、このテキストが変わります。</p>
-        <button id="changeButton">テキスト変更</button>
+        <input type="text" id="todoInput" placeholder="ここに入力">
+        <button id="addButton">OK</button>
 
+        <ul id="itemList">
+            <li>既存のアイテム</li>
+        </ul>
         <script src="script.js"></script>
     </body>
 </html>
