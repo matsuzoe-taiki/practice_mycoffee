@@ -2,16 +2,28 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>ToDOリスト機能</title>
+        <title>ハンバーガーメニュー</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="text" id="todoInput" placeholder="ここに入力">
-        <button id="addButton">OK</button>
-
-        <ul id="itemList">
-            <li>既存のアイテム</li>
-        </ul>
+        <header>
+            <button id="menuButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">サービス</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>ハンバーガーメニューの練習</h1>
+            <p>ボタンをクリックしてメニューを開閉してみましょう</p>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
