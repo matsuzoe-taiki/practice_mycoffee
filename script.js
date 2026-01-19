@@ -8,4 +8,19 @@ const toggleMenu = () => {
 
 menuButton.addEventListener("click", toggleMenu);
 
-const Tab = document.querySelectorAll(".Tab");
+const tabItems = document.querySelectorAll(".tab-item");
+
+tabItems.forEach((tabItem) => {
+    tabItem.addEventListener("click", () => {
+        tabItems.forEach((t) => {
+            t.classList.remove("active");
+        });
+        const tabPanels = document.querySelectorAll(".tab-panel");
+        tabPanels.forEach((tabPanel) => {
+            tabPanel.classList.remove("active");
+        });
+        tabItem.classList.add("active");
+        const targetId = tabItem.dataset.target;
+        document.getElementById(targetId).classList.add("active");
+    })
+})

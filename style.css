@@ -67,7 +67,7 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-#tabChange {
+.tab-list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +76,22 @@ header {
     border-bottom: solid #EEE;
     padding: 1rem;
 }
-main {
+.tab-item {
+    background: none;
+    border: none;
+}
+.tab-item.active {
+    border-bottom: solid black;
+}
+.tab-content {
     padding: 1rem;
     border-bottom: solid #EEE;
+}
+.tab-panel {
+    display: none;
+}
+.tab-panel.active {
+    display: block;
 }
 #aboutUs {
     display: flex;
