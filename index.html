@@ -2,11 +2,13 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>ハンバーガーメニュー</title>
+        <title>カフェ風ホームページ</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
+
+            <strong>My Cafe</strong>
             <button id="menuButton">
                 <span></span>
                 <span></span>
@@ -15,15 +17,32 @@
             <nav id="menu">
                 <ul>
                     <li><a href="#">ホーム</a></li>
-                    <li><a href="#">サービス</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">おといあわせ</a></li>
                 </ul>
             </nav>
         </header>
+        <section id="tabChange">
+                <span id="foodTab" class="Tab">フード</span>
+                <span id="drinkTab" class="Tab">ドリンク</span>
+                <span id="desertTab" class="Tab">デザート</span>
+        </section>
         <main>
-            <h1>ハンバーガーメニューの練習</h1>
-            <p>ボタンをクリックしてメニューを開閉してみましょう</p>
+            <strong>フードメニュー</strong>
+            <p>パスタ、サンドイッチなど</p>
         </main>
+        <section id="aboutUs">
+            <strong>About Us</strong>
+            <span>美味しいコーヒーと、心温まる空間を提供しています。厳選された豆を丁寧に焙煎し、一杯一杯に心をこめています。</span>
+        </section>
+        <section id="newsContainer">
+            <strong>News</strong>
+            <a href="#">2023.10.27 新メニュー「季節のラテ」が登場！！</a>
+            <a href="#">2023.10.20 年末年始の営業時間について</a>
+            <a href="#">2023.10.15 公式サイトをリニューアルしました。</a>
+        </section>
+        <div id="footerContainer">
+            <footer>@ 2023 My Cafe.All Rights Reserved.</footer>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

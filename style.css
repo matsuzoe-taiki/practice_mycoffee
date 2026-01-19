@@ -23,16 +23,19 @@ header {
 }
 #menuButton span {
     display: block;
+    position: static;
     width: 100%;
     height: 3px;
     background: white;
     transition: transform 0.3s, opacity 0.3s;
+    z-index: 100;
 }
 #menu {
     position: absolute;
     top: 0;
     right: -200px;
-    width: 100vh;
+    width: 200px;
+    height: 100vh;
     background: #444;
     padding-top: 5rem;
     transition: right 0.3s;
@@ -50,12 +53,73 @@ header {
     border-bottom: 1px solid#555;
 }
 
+#menu.is-active {
+    right: 0;
+}
+
 #menuButton.is-active span:nth-child(1){
     transform: rotate(45deg) translate(5px, 5px);
 }
 #menuButton.is-active span:nth-child(2) {
     opacity: 0;
 }
-#menuButton.is-active span :nth-child(3) {
+#menuButton.is-active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#tabChange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    border-bottom: solid #EEE;
+    padding: 1rem;
+}
+main {
+    padding: 1rem;
+    border-bottom: solid #EEE;
+}
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    height: 30vh;
+    border-bottom: solid #EEE;
+}
+#aboutUs strong {
+    font-size: 48px;
+}
+#aboutUs span {
+    display: inline-block;
+}
+#newsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEE;
+    height: 30vh;
+    padding: 1rem;
+    gap: 10px;
+}
+#newsContainer strong {
+    font-size: 48px;
+}
+#newsContainer a {
+    display: block;
+    width: 100%;
+    align-self: flex-start;
+    text-decoration: none;
+    border-bottom: solid #DDD;
+}
+#footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #333;
+    padding: 1rem;
 }

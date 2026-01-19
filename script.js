@@ -7,3 +7,5 @@ const toggleMenu = () => {
 };
 
 menuButton.addEventListener("click", toggleMenu);
+
+const Tab = document.querySelectorAll(".Tab");
